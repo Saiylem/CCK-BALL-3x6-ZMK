@@ -66,6 +66,14 @@
         keep-mods = <(MOD_LALT)>;
     };
 
+    Interrobang: Interrobang {
+        compatible = "zmk,behavior-send-string";
+        label = "INTERROBANG";
+        #binding-cells = <0>;
+        text = "‽";
+        charmap = ‽;
+    };
+
     behaviors {
     };
 
@@ -100,7 +108,7 @@
             bindings = <
 &kp TAB    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND       &kp DOLLAR  &kp PERCENT  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp TILDE  &kp SPACE        &kp SPACE    &kp SPACE       &kp SPACE   &kp SPACE    &kp PLUS   &kp LBKT       &kp RBKT        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&kp GRAVE  &kp SPACE        &kp SPACE    &kp SPACE       &kp SPACE   &kp SPACE    &kp SPACE  &kp SPACE      &kp SPACE       &kp SPACE             &kp BSLH               &kp EQUAL
+&kp GRAVE  &kp SPACE        &kp SPACE    &kp SPACE       &kp SPACE   &kp SPACE    &kp SPACE  &kp SPACE      &kp SPACE       &kp SPACE             &Interrobang           &kp EQUAL
 &kp SPACE  &kp SPACE        &kp SPACE    &kp UNDERSCORE  &kp SPACE   &kp SPACE    &kp SPACE  &kp SPACE      &kp UNDERSCORE  &kp SPACE             &kp SPACE              &kp SPACE
             >;
 
