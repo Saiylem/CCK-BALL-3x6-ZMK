@@ -97,7 +97,7 @@
         #binding-cells = <0>;
         bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <200>;
     };
 
     TDance_KP_DivideMultiply: TDance_KP_DivideMultiply {
@@ -106,14 +106,14 @@
         #binding-cells = <0>;
         bindings = <&kp KP_DIVIDE>, <&kp KP_MULTIPLY>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <200>;
     };
 
     TDance_KP_DotComma: TDance_KP_DotComma {
         compatible = "zmk,behavior-tap-dance";
         label = "TDANCE_KP_DOTCOMMA";
         #binding-cells = <0>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <200>;
         bindings = <&kp KP_DOT>, <&kp COMMA>;
     };
 
@@ -126,7 +126,7 @@
         LAlt_Simulation {
             bindings = <&kt LALT>;
             key-positions = <39 0>;
-            timeout-ms = <2000>;
+            timeout-ms = <5000>;
             slow-release;
             require-prior-idle-ms = <(-1)>;
         };
