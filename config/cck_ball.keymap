@@ -180,10 +180,10 @@
 
         Symbols {
             bindings = <
-&kp TAB        &kp EXCLAMATION  &kp POUND             &kp DOLLAR             &kp PERCENT       &kp CARET          &kp GRAVE  &kp ASTRK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp MINUS  &kp EQUAL
-&kp AMPERSAND  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp SPACE  &kp SPACE       &kp SPACE        &kp BSLH   &kp PIPE
-&kp SPACE      &kp SPACE        &kp SPACE             &kp SPACE              &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE       &kp SPACE        &kp SPACE  &kp SPACE
-&kp SPACE      &kp SPACE        &kp SPACE             &kp UNDERSCORE         &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp UNDERSCORE  &kp SPACE        &kp SPACE  &kp SPACE
+&kp TAB        &kp EXCLAMATION  &kp POUND             &kp DOLLAR             &kp PERCENT       &kp CARET          &kp GRAVE  &kp ASTRK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp MINUS      &kp EQUAL
+&kp AMPERSAND  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp SPACE  &kp SPACE       &kp SPACE        &kp SPACE      &kp PLUS
+&kp SPACE      &kp SPACE        &kp SPACE             &kp SPACE              &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE       &kp SPACE        &kp BACKSLASH  &kp PIPE
+&kp SPACE      &kp SPACE        &kp SPACE             &kp UNDERSCORE         &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp UNDERSCORE  &kp SPACE        &kp SPACE      &kp SPACE
             >;
 
             sensor-bindings =
@@ -198,7 +198,7 @@
 &kp ESC              &kp F2                   &kp KP_NUMBER_7      &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp BACKSPACE              &kp SPACE  &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE  &kp SPACE
 &kp TAB              &TDance_KP_Equals_Tilde  &kp KP_NUMBER_4      &ModMorph_KP_5N_LShift2N  &kp KP_NUMBER_6  &TDance_KP_MinusPlus       &kp SPACE  &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE  &kp SPACE
 &mt LSHIFT KP_ENTER  &kp KP_NUMBER_0          &kp KP_NUMBER_1      &kp KP_NUMBER_2           &kp KP_NUMBER_3  &TDance_KP_DivideMultiply  &kp SPACE  &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE  &none
-&kp LCTRL            &kp LEFT_ALT             &TDance_KP_DotComma  &lt 1 SPACE               &to 0            &sl 3                      &sl 3      &to 5      &lt 1 SPACE  &kp SPACE  &none      &none
+&mt LCTRL CAPS       &kp LEFT_ALT             &TDance_KP_DotComma  &lt 1 SPACE               &to 0            &sl 3                      &sl 3      &to 5      &lt 1 SPACE  &kp SPACE  &none      &none
             >;
 
             sensor-bindings =
@@ -242,10 +242,10 @@
 
         KeyNav {
             bindings = <
-&kp ESC  &kp F2  &trans  &trans       &trans                     &trans  &trans  &trans  &trans       &trans  &trans  &trans
-&kp TAB  &trans  &trans  &trans       &trans                     &trans  &trans  &trans  &trans       &trans  &trans  &trans
-&trans   &trans  &trans  &trans       &trans                     &trans  &trans  &trans  &trans       &trans  &trans  &trans
-&trans   &trans  &trans  &lt 1 SPACE  &Hold_Tap_LayerPhaser 2 2  &sl 3   &sl 3   &to 0   &lt 1 SPACE  &trans  &trans  &trans
+&kp ESC           &kp F2        &trans        &trans       &trans                     &trans  &trans  &trans    &kp UP       &trans     &trans  &trans
+&kp TAB           &trans        &trans        &trans       &trans                     &trans  &trans  &kp LEFT  &kp DOWN     &kp RIGHT  &trans  &trans
+&mt LSHIFT ENTER  &trans        &trans        &trans       &trans                     &trans  &trans  &trans    &trans       &trans     &trans  &trans
+&mt LCTRL CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &Hold_Tap_LayerPhaser 2 2  &sl 3   &sl 3   &to 0     &lt 1 SPACE  &trans     &trans  &trans
             >;
 
             sensor-bindings =
