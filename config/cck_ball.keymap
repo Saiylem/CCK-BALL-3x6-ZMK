@@ -180,10 +180,10 @@
 
         Symbols {
             bindings = <
-&kp TAB        &kp EXCLAMATION  &kp POUND             &kp DOLLAR             &kp PERCENT       &kp CARET          &kp GRAVE  &kp ASTRK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp MINUS      &kp EQUAL
-&kp AMPERSAND  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp SPACE  &kp SPACE       &kp SPACE        &kp SPACE      &kp PLUS
+&kp TAB        &kp EXCLAMATION  &kp POUND             &kp DOLLAR             &kp PERCENT       &kp CARET          &kp GRAVE  &kp ASTRK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp MINUS      &kp UNDERSCORE
+&kp AMPERSAND  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp SPACE  &kp SPACE       &kp SPACE        &kp EQUAL      &kp PLUS
 &kp SPACE      &kp SPACE        &kp SPACE             &kp SPACE              &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE       &kp SPACE        &kp BACKSLASH  &kp PIPE
-&kp SPACE      &kp SPACE        &kp SPACE             &kp UNDERSCORE         &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp UNDERSCORE  &kp SPACE        &kp SPACE      &kp SPACE
+&kp SPACE      &kp SPACE        &kp SPACE             &kp SPACE              &kp SPACE         &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE       &kp SPACE        &kp SPACE      &kp SPACE
             >;
 
             sensor-bindings =
