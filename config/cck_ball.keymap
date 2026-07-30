@@ -117,6 +117,25 @@
         bindings = <&kp KP_DOT>, <&kp COMMA>;
     };
 
+    ModMorph_KP_5N_LShift2N: ModMorph_KP_5N_LShift2N {
+        compatible = "zmk,behavior-mod-morph";
+        label = "MODMORPH_KP_5N_LSHIFT2N";
+        bindings = <&kp KP_NUMBER_5>, <&kp KP_NUMBER_2>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+        keep-mods = <(MOD_LSFT)>;
+    };
+
+    TDance_KP_Equals_Tilde: TDance_KP_Equals_Tilde {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TDANCE_KP_EQUALS_TILDE";
+        #binding-cells = <0>;
+        bindings = <&kp EQUAL>, <&kp TILDE>;
+
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
@@ -137,15 +156,6 @@
             require-prior-idle-ms = <(-1)>;
             timeout-ms = <50>;
             layers = <0>;
-        };
-    };
-
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
         };
     };
 
@@ -184,10 +194,10 @@
 
         Left_Numpad {
             bindings = <
-&kp BSPC  &none   &kp N7               &kp N8  &kp N9  &TDance_KP_MinusPlus       &kp SPACE  &kp SPACE  &kp UP     &kp SPACE  &kp SPACE  &kp SPACE
-&kp TAB   &none   &kp N4               &kp N5  &kp N6  &TDance_KP_DivideMultiply  &kp SPACE  &kp LEFT   &kp DOWN   &kp RIGHT  &kp SPACE  &kp SPACE
-&none     &kp N0  &kp N1               &kp N2  &kp N3  &kp KP_ENTER               &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &none
-&none     &none   &TDance_KP_DotComma  &none   &none   &none                      &none      &none      &none      &kp SPACE  &none      &none
+&kp ESC              &kp F2                   &kp KP_NUMBER_7      &kp KP_NUMBER_8           &kp KP_NUMBER_9  &TDance_KP_MinusPlus       &kp SPACE  &kp SPACE  &kp UP     &kp SPACE  &kp SPACE  &kp SPACE
+&kp TAB              &TDance_KP_Equals_Tilde  &kp KP_NUMBER_4      &ModMorph_KP_5N_LShift2N  &kp KP_NUMBER_6  &TDance_KP_DivideMultiply  &kp SPACE  &kp LEFT   &kp DOWN   &kp RIGHT  &kp SPACE  &kp SPACE
+&mt LSHIFT KP_ENTER  &kp KP_NUMBER_0          &kp KP_NUMBER_1      &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp KP_ENTER               &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &none
+&kp LCTRL            &kp LALT                 &TDance_KP_DotComma  &none                     &none            &none                      &none      &none      &none      &kp SPACE  &none      &none
             >;
 
             sensor-bindings =
