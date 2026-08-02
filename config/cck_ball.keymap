@@ -216,10 +216,10 @@
 
         Functions {
             bindings = <
-&kp F1     &kp F2    &kp F3    &kp F4   &kp SPACE  &kp SPACE  &trans     &trans  &kp F13  &kp F14   &kp F15   &kp F16
-&kp F5     &kp F6    &kp F7    &kp F8   &trans     &kp SPACE  &kp SPACE  &trans  &kp F17  &kp F18   &kp F19   &kp F20
-&kp F9     &kp F10   &kp F11   &kp F12  &trans     &trans     &trans     &trans  &kp F21  &kp F22   &kp F23   &kp F24
-&kp LCTRL  &kp LGUI  &kp LALT  &trans   &trans     &trans     &trans     &trans  &trans   &kp RALT  &kp RGUI  &kp RCTRL
+&kp F1     &kp F2    &kp F3    &kp F4   &kp SPACE  &kp SPACE  &kp PRINTSCREEN  &kp PAUSE_BREAK  &kp F13  &kp F14   &kp F15   &kp F16
+&kp F5     &kp F6    &kp F7    &kp F8   &trans     &kp SPACE  &kp SCROLLLOCK   &kp KP_NUM       &kp F17  &kp F18   &kp F19   &kp F20
+&kp F9     &kp F10   &kp F11   &kp F12  &trans     &trans     &trans           &trans           &kp F21  &kp F22   &kp F23   &kp F24
+&kp LCTRL  &kp LGUI  &kp LALT  &trans   &trans     &trans     &trans           &trans           &trans   &kp RALT  &kp RGUI  &kp RCTRL
             >;
 
             sensor-bindings =
@@ -248,8 +248,8 @@
 
         KeyNav {
             bindings = <
-&kp ESC           &kp F2        &trans        &trans       &trans                     &trans  &trans  &trans    &kp UP       &trans         &trans  &kp BACKSPACE
-&kp TAB           &trans        &trans        &trans       &trans                     &trans  &trans  &kp LEFT  &kp DOWN     &kp RIGHT      &trans  &trans
+&kp ESC           &kp F2        &trans        &mkp MB4     &mkp MB5                   &trans  &trans  &trans    &kp UP       &trans         &trans  &kp BACKSPACE
+&kp TAB           &trans        &mkp MB1      &mkp MB3     &mkp MB2                   &trans  &trans  &kp LEFT  &kp DOWN     &kp RIGHT      &trans  &trans
 &mt LSHIFT ENTER  &trans        &trans        &trans       &trans                     &trans  &trans  &trans    &trans       &trans         &trans  &mt RSHIFT ENTER
 &mt LCTRL CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &Hold_Tap_LayerPhaser 2 2  &sl 3   &sl 3   &to 0     &lt 1 SPACE  &kp RIGHT_ALT  &trans  &mt RCTRL DEL
             >;
