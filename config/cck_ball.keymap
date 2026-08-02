@@ -248,10 +248,10 @@
 
         KeyNav {
             bindings = <
-&kp ESC           &kp F2        &trans        &mkp MB4     &mkp MB5                   &trans  &trans  &trans    &kp UP       &trans         &trans  &kp BACKSPACE
-&kp TAB           &trans        &mkp MB1      &mkp MB3     &mkp MB2                   &trans  &trans  &kp LEFT  &kp DOWN     &kp RIGHT      &trans  &trans
-&mt LSHIFT ENTER  &trans        &trans        &trans       &trans                     &trans  &trans  &trans    &trans       &trans         &trans  &mt RSHIFT ENTER
-&mt LCTRL CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &Hold_Tap_LayerPhaser 2 2  &sl 3   &sl 3   &to 0     &lt 1 SPACE  &kp RIGHT_ALT  &trans  &mt RCTRL DEL
+&kp ESC           &kp F2        &mkp MB4      &none        &mkp MB5                   &kp PAGE_UP    &kp HOME  &trans    &kp UP       &trans         &trans              &kp BACKSPACE
+&kp TAB           &trans        &mkp MB1      &mkp MB3     &mkp MB2                   &kp PAGE_DOWN  &kp END   &kp LEFT  &kp DOWN     &kp RIGHT      &trans              &trans
+&mt LSHIFT ENTER  &trans        &trans        &trans       &trans                     &trans         &trans    &trans    &trans       &trans         &trans              &mt RSHIFT ENTER
+&mt LCTRL CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &Hold_Tap_LayerPhaser 2 2  &sl 3          &sl 3     &to 0     &lt 1 SPACE  &kp RIGHT_ALT  &kp K_CONTEXT_MENU  &mt RCTRL DEL
             >;
 
             sensor-bindings =
